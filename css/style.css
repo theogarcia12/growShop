@@ -1,0 +1,231 @@
+.headerPrincipal {
+    background-color: #191825;
+}
+
+.sectionPrincipal {
+    background-color: #865DFF ;
+    width: 100%;
+    height: 1000px;
+    background-position: 40% 30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.bodyClass {
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E384FF;
+    font-weight: bold;
+}
+/* .navBar {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    padding-right: 2.5rem;
+} */
+
+.navbar li a{
+    text-decoration: none;
+    color:#E384FF;
+    font-size: 1.25rem;
+    padding: 0%;
+}
+
+.card {
+    width: 18.75rem;
+    height: 25rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 1px 1px .625rem black;
+    background-color: #191825;
+    position: relative;
+    z-index: 1;
+}
+.cardContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 500px;
+    background-image: url("../assets/images/7.jpeg");
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card div{
+    width: 100%;
+    height: 18.5rem;
+}
+.card div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h2 {
+    text-align: center;
+    color: #865DFF;
+}
+.card p {
+    text-align: center;
+    color: #865DFF;
+}
+
+footer {
+    background-color:#191825;
+}
+.divFooter {
+    width: 100%;
+    height: 20rem;
+}
+.contactanos a{
+    text-align: center;
+    color: #E384FF;
+    text-decoration: none;
+    justify-content: center;
+}
+.contactanos {
+    text-align: center;
+    justify-content: center;
+}
+
+.formContacto label{
+    color: #191825;
+}
+.formContacto input{
+    color: #191825;
+}
+
+.espacioBlanco {
+    background-color: #865DFF ;
+    width: 100%;
+    height: 50px;
+    background-position: 40% 30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.espacioBlanco h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.espacioContacto h1{
+    color:#191825;
+    height: 20px
+}
+.sectionPrincipal h1{
+    text-align: center;
+}
+.classOferta {
+    text-align: center;
+    font-size: 25px;
+}
+.sectionContacto {
+    text-align: center;
+    color: #E384FF;
+    height: 200px;
+    width: 100%;
+}
+.formContacto{
+    text-align: left;
+    align-items: center;
+    display: inline-block;
+}
+.emailInput{
+    align-items: center;
+    text-align: center;
+    height: 20px;
+    display: block;
+}
+.mensajeInput {
+    align-items: center;
+    text-align: center;
+    display: block;
+    height: 100px;
+}
+.btnSubmit{
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 20px;
+}
+.divProducto{
+    background-color: #865DFF ;
+    height: 10px;
+}
+.classCarrito {
+    text-align: center;
+    height: 300px;
+}
+.sectionNosotros ul li{
+    background-color: #865DFF;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    width: 100%
+    padding 0;
+}
+.sectionNosotros h2{
+    text-align: center;
+}
+.cardContainers{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-repeat: no-repeat;
+    
+}
+.fondoProductos {
+    background-image: url("../assets/images/7.jpeg");
+    background-size: cover;
+    background-position: 100%;
+
+}
+.mainHuno h1{
+    text-align: center;
+    font-size: 30px;
+    color: #E384FF;
+    font-family:'Merriweather', serif;
+    text-decoration: none;
+    font-weight:bold;
+}
+.mapaMaps iframe{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+.carritoP {
+    padding: 20px;
+}
+.espacioBlancos {
+    background-color: #865DFF ;
+    width: 100%;
+    height: 200px;
+    background-position: 40% 30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.mainHuno {
+    font-size: 30px;
+    color: #E384FF;
+    font-family:'Merriweather', serif;
+    text-decoration: none;
+}
