@@ -2,7 +2,7 @@
     background-color: #191825;
 }
 
-.sectionPrincipal {
+/* .sectionPrincipal {
     background-color: #865DFF ;
     width: 100%;
     height: 1000px;
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
+} */
 
 .bodyClass {
     font-family: 'Merriweather', serif;
@@ -160,8 +160,16 @@ h1 {
 }
 .divProducto{
     background-color: #865DFF ;
-    height: 10px;
+    height: 50px;
+    padding-top: 10px;
 }
+
+.divProducto h1{
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+}
+
 .classCarrito {
     text-align: center;
     height: 300px;
@@ -186,7 +194,7 @@ h1 {
     justify-content: center;
     gap: 50px;
     background-repeat: no-repeat;
-    
+    padding-top: 20px;
 }
 .fondoProductos {
     background-image: url("../assets/images/7.jpeg");
@@ -228,4 +236,20 @@ h1 {
     color: #E384FF;
     font-family:'Merriweather', serif;
     text-decoration: none;
+}
+
+@media(max-width:48rem){
+    .cardContainer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 500px;
+        background-image: url("../assets/images/7.jpeg");
+        align-items: center;
+        justify-content: center;
+        gap: px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1500px;
+    }
 }
