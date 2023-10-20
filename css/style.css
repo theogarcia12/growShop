@@ -1,17 +1,6 @@
 .headerPrincipal {
     background-color: #191825;
 }
-
-/* .sectionPrincipal {
-    background-color: #865DFF ;
-    width: 100%;
-    height: 1000px;
-    background-position: 40% 30%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-} */
-
 .bodyClass {
     font-family: 'Merriweather', serif;
     font-family: 'Open Sans', sans-serif;
@@ -21,7 +10,6 @@
     background-color: #E384FF;
     font-weight: bold;
 }
-
 
 .navbar li a{
     text-decoration: none;
@@ -184,22 +172,10 @@ h1 {
 .sectionNosotros h2{
     text-align: center;
 }
-.cardContainers{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    background-repeat: no-repeat;
-    padding-top: 20px;
-}
 .fondoProductos {
     background-image: url("../assets/images/7.jpeg");
     background-size: cover;
     background-position: 100%;
-
 }
 .mainHuno {
     text-align: center;
@@ -247,14 +223,39 @@ iframe {
     width: 50%;
     height: 70vh;
 }
-
+.cardContainers{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    gap: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding-top: 20px;
+}
+.fondoDeproductos {
+    background-image: url("../assets/images/7.jpeg");
+    background-size: cover;
+    background-position: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+.mainTamaño {
+    height: auto;
+}
 @media (max-width: 1000px) {
     .fondoProductos {
         height: 900px;
     }
     .cardContainer {
-        height: 900px;
         gap: .9375rem;
+        height: 900px;
+    }
+    .fondoDeproductos{
+        height: 900px;
     }
 }
 @media (max-width: 615px) {
@@ -267,57 +268,84 @@ iframe {
     .card {
         width: 250px;
         height: 300px;
-        border-radius: 1.25rem;
-        overflow: hidden;
-        box-shadow: 1px 1px .625rem black;
-        background-color: #191825;
-        position: relative;
-        z-index: 1;
     }
 }
 
 @media(max-width:768px){
-    .fondoProductos{
-        
+
+    .fondoDeproductos {
+        height: 1500px;
     }
     .cardContainers{
         display: flex;
-        width: 100%;
-        flex-direction: row;
-        height: 500px;
-        background-image: url("../assets/images/7.jpeg");
-        align-items: center;
-        justify-content: center;
         gap: 15px;
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 1500px;
     }
 }
+@media(max-width:520px) {
+    .fondoDeproductos {
+        height: 2100px;
+    }
+    .cardContainers{
+        height: 2100px;
+    }
+    .sectionPrincipal{
+        height: auto;
+    }
+    iframe {
+        height: 300px;
+    }
+}
 
-@media(max-width:385){
+@media(max-width:390px){
     .cardContainer{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        height: 500px;
-        background-image: url("../assets/images/7.jpeg");
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1500px;
+        height: 1000px;
     }
     .fondoProductos{
-        height: 1000;
+        height: 1000px;
     }
     .mainHuno{
-        font-size: 15px;
+        font-size: 20px;
     }
     .icono {
         align-items: center;
         justify-content: center;
-        padding-left: 40px;
     }
+    iframe {
+        height: 200px;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "image1 image2"
+        "image3 image4";
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.image4 {
+    grid-area: image4;
 }
