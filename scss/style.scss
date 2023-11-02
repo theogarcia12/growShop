@@ -6,113 +6,13 @@
 @import "./layout/_navbar.scss";
 @import "./layout/_header.scss";
 @import "./layout/_main-index.scss";
+@import "./layout/_main-producto.scss";
+@import "./layout/_main-productos.scss";
+@import "./layout/_main-carrito.scss";
 @import "./layout/_main-contactanos.scss";
 @import "./layout/_footer.scss";
+@import "./layout/_media.scss";
 
-.sectionPrincipal h1{
-    text-align: center;
-}
-.classOferta {
-    text-align: center;
-    font-size: 25px;
-}
-.sectionContacto {
-    text-align: center;
-    color: #E384FF;
-    height: 200px;
-    width: 100%;
-}
-.formContacto{
-    text-align: left;
-    align-items: center;
-    display: inline-block;
-}
-.emailInput{
-    align-items: center;
-    text-align: center;
-    height: 20px;
-    display: block;
-}
-.mensajeInput {
-    align-items: center;
-    text-align: center;
-    display: block;
-    height: 100px;
-}
-.btnSubmit{
-    display: block;
-    margin: 0 auto;
-}
-h1 {
-    font-size: 20px;
-}
-.divProducto{
-    background-color: #865DFF ;
-    height: 50px;
-    padding-top: 10px;
-}
-
-.divProducto h1{
-    justify-content: center;
-    text-align: center;
-    height: 40px;
-}
-
-.classCarrito {
-    text-align: center;
-    height: 300px;
-}
-.sectionNosotros ul {
-    background-color: #865DFF;
-    font-size: 20px;
-    text-align: center;
-    list-style: none;
-    width: 100%
-    padding 0;
-}
-.sectionNosotros h2{
-    text-align: center;
-}
-.fondoProductos {
-    background-image: url("../assets/images/7.jpeg");
-    background-size: cover;
-    background-position: 100%;
-}
-.mainHuno {
-    text-align: center;
-    font-size: 30px;
-    color: #E384FF;
-    font-family:'Merriweather', serif;
-    text-decoration: none;
-    font-weight:bold;
-}
-.mapaMaps iframe{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-}
-.carritoP {
-    padding: 20px;
-}
-.espacioBlancos {
-    background-color: #865DFF ;
-    width: 100%;
-    height: 200px;
-    background-position: 40% 30%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.mainHuno {
-    font-size: 30px;
-    color: #E384FF;
-    font-family:'Merriweather', serif;
-    text-decoration: none;
-}
 .dobleHuno {
     font-size: 50px;
     color: #191825;
@@ -121,109 +21,7 @@ h1 {
     text-align: center;
     justify-content: center;
 }
-.encontranos {
-    text-align: center;
-}
-iframe {
-    width: 80%; 
-    height: 40vh;
-}
-.carruselImg {
-    width: 50%;
-    height: 70vh;
-}
-.cardContainers{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-    gap: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    padding-top: 20px;
-}
-.fondoDeproductos {
-    background-image: url("../assets/images/7.jpeg");
-    background-size: cover;
-    background-position: 100%;
-    height: 900px;
-    background-repeat: no-repeat;
-}
-.mainTamaño {
-    height: auto;
-}
-@media (max-width: 1000px) {
-    .fondoProductos {
-        height: 900px;
-    }
-    .cardContainer {
-        gap: .9375rem;
-        height: 900px;
-    }
-    .fondoDeproductos{
-        height: 900px;
-    }
-}
-@media (max-width: 615px) {
-    .cardContainer{
-        height: 1000px;
-    }
-    .fondoProductos {
-        height: 1000px;
-    }
-    .card {
-        width: 250px;
-        height: 300px;
-    }
-}
 
-@media(max-width:768px){
-
-    .fondoDeproductos {
-        height: 1500px;
-    }
-    .cardContainers{
-        display: flex;
-        gap: 15px;
-        height: 1500px;
-    }
-}
-@media(max-width:520px) {
-    .fondoDeproductos {
-        height: 2100px;
-    }
-    .cardContainers{
-        height: 2100px;
-    }
-    .sectionPrincipal{
-        height: auto;
-    }
-    iframe {
-        height: 300px;
-    }
-}
-
-@media(max-width:390px){
-    .cardContainer{
-        height: 1000px;
-    }
-    .fondoProductos{
-        height: 1000px;
-    }
-    .mainHuno{
-        font-size: 20px;
-    }
-    .icono {
-        align-items: center;
-        justify-content: center;
-    }
-    iframe {
-        height: 200px;
-    }
-}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -259,7 +57,4 @@ iframe {
 
 .image4 {
     grid-area: image4;
-}
-.botonHamburguesa {
-    background-color: #E384FF;
 }

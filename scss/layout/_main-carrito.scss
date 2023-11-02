@@ -1,0 +1,25 @@
+.espacioBlancos{
+    background-color: #865DFF ;
+    width: 100%;
+    height: 200px;
+    background-position: 40% 30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .classOferta{
+        text-align: center;
+        font-size: 25px;
+    }
+    .carritoP{
+        padding: 20px;
+    }
+}
+
+.classCarrito{
+    text-align: center;
+    height: 300px;
+}
+

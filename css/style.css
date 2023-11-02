@@ -10,6 +10,32 @@
   background-color: #E384FF;
   font-weight: bold; }
 
+h1 {
+  font-size: 20px; }
+
+.card {
+  width: 18.75rem;
+  height: 25rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 1px 1px .625rem black;
+  background-color: #191825;
+  position: relative;
+  z-index: 1; }
+  .card div {
+    width: 100%;
+    height: 18.5rem; }
+    .card div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .card h2 {
+    text-align: center;
+    color: #865DFF; }
+  .card p {
+    text-align: center;
+    color: #865DFF; }
+
 .headerPrincipal {
   background-color: #191825; }
   .headerPrincipal .navbar li a {
@@ -17,6 +43,14 @@
     color: #E384FF;
     font-size: 1.25rem;
     padding: 0%; }
+
+.mainHuno {
+  text-align: center;
+  font-size: 30px;
+  color: #E384FF;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  font-weight: bold; }
 
 .espacioBlanco {
   background-color: #865DFF;
@@ -34,7 +68,12 @@
     justify-content: center;
     align-items: center; }
 
-.fondoProductos .cardContainer {
+.fondoProductos {
+  background-image: url("../assets/images/7.jpeg");
+  background-size: cover;
+  background-position: 100%; }
+
+.cardContainer {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -46,39 +85,121 @@
   background-size: cover;
   flex-wrap: wrap;
   justify-content: space-around; }
-  .fondoProductos .cardContainer .card {
-    width: 18.75rem;
-    height: 25rem;
-    border-radius: 1.25rem;
-    overflow: hidden;
-    box-shadow: 1px 1px .625rem black;
-    background-color: #191825;
-    position: relative;
-    z-index: 1; }
-    .fondoProductos .cardContainer .card div {
-      width: 100%;
-      height: 18.5rem; }
-      .fondoProductos .cardContainer .card div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .fondoProductos .cardContainer .card h2 {
-      text-align: center;
-      color: #865DFF; }
-    .fondoProductos .cardContainer .card p {
-      text-align: center;
-      color: #865DFF; }
 
-.espacioBlanco h1 {
+.sectionNosotros ul {
+  background-color: #865DFF;
+  font-size: 20px;
+  text-align: center;
+  list-style: none;
+  width: 100% padding 0; }
+
+.sectionNosotros h2 {
+  text-align: center; }
+
+.sectionNosotros .encontranos {
+  text-align: center; }
+  .sectionNosotros .encontranos iframe {
+    width: 80%;
+    height: 40vh; }
+
+.mainTamaño {
+  height: auto; }
+  .mainTamaño .sectionPrincipal h1 {
+    text-align: center; }
+  .mainTamaño .sectionPrincipal .divProducto {
+    background-color: #865DFF;
+    height: 50px;
+    padding-top: 10px; }
+    .mainTamaño .sectionPrincipal .divProducto h1 {
+      justify-content: center;
+      text-align: center;
+      height: 40px; }
+  .mainTamaño .sectionPrincipal .fondoDeproductos {
+    background-image: url("../assets/images/7.jpeg");
+    background-size: cover;
+    background-position: 100%;
+    height: 900px;
+    background-repeat: no-repeat; }
+    .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      height: auto;
+      align-items: center;
+      gap: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-top: 20px; }
+      .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers .card {
+        width: 18.75rem;
+        height: 25rem;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        box-shadow: 1px 1px .625rem black;
+        background-color: #191825;
+        position: relative;
+        z-index: 1; }
+
+.espacioBlancos {
+  background-color: #865DFF;
+  width: 100%;
+  height: 200px;
+  background-position: 40% 30%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   text-align: center;
   justify-content: center;
   align-items: center; }
+  .espacioBlancos .classOferta {
+    text-align: center;
+    font-size: 25px; }
+  .espacioBlancos .carritoP {
+    padding: 20px; }
+
+.classCarrito {
+  text-align: center;
+  height: 300px; }
+
+.espacioBlanco {
+  background-color: #865DFF;
+  width: 100%;
+  height: 50px;
+  background-position: 40% 30%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .espacioBlanco h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
 
 .sectionContacto .formContacto label {
   color: #191825; }
 
 .sectionContacto .formContacto input {
   color: #191825; }
+
+.sectionContacto .formContacto .emailInput {
+  align-items: center;
+  text-align: center;
+  height: 20px;
+  display: block; }
+
+.sectionContacto .formContacto .mensajeInput {
+  align-items: center;
+  text-align: center;
+  display: block;
+  height: 100px; }
+
+.sectionContacto .formContacto .btnSubmit {
+  display: block;
+  margin: 0 auto; }
 
 footer {
   background-color: #191825; }
@@ -96,149 +217,6 @@ footer {
         text-decoration: none;
         color: #E384FF; }
 
-.sectionPrincipal h1 {
-  text-align: center; }
-
-.classOferta {
-  text-align: center;
-  font-size: 25px; }
-
-.sectionContacto {
-  text-align: center;
-  color: #E384FF;
-  height: 200px;
-  width: 100%; }
-
-.formContacto {
-  text-align: left;
-  align-items: center;
-  display: inline-block; }
-
-.emailInput {
-  align-items: center;
-  text-align: center;
-  height: 20px;
-  display: block; }
-
-.mensajeInput {
-  align-items: center;
-  text-align: center;
-  display: block;
-  height: 100px; }
-
-.btnSubmit {
-  display: block;
-  margin: 0 auto; }
-
-h1 {
-  font-size: 20px; }
-
-.divProducto {
-  background-color: #865DFF;
-  height: 50px;
-  padding-top: 10px; }
-
-.divProducto h1 {
-  justify-content: center;
-  text-align: center;
-  height: 40px; }
-
-.classCarrito {
-  text-align: center;
-  height: 300px; }
-
-.sectionNosotros ul {
-  background-color: #865DFF;
-  font-size: 20px;
-  text-align: center;
-  list-style: none;
-  width: 100% padding 0; }
-
-.sectionNosotros h2 {
-  text-align: center; }
-
-.fondoProductos {
-  background-image: url("../assets/images/7.jpeg");
-  background-size: cover;
-  background-position: 100%; }
-
-.mainHuno {
-  text-align: center;
-  font-size: 30px;
-  color: #E384FF;
-  font-family: 'Merriweather', serif;
-  text-decoration: none;
-  font-weight: bold; }
-
-.mapaMaps iframe {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding-left: 100px; }
-
-.carritoP {
-  padding: 20px; }
-
-.espacioBlancos {
-  background-color: #865DFF;
-  width: 100%;
-  height: 200px;
-  background-position: 40% 30%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
-
-.mainHuno {
-  font-size: 30px;
-  color: #E384FF;
-  font-family: 'Merriweather', serif;
-  text-decoration: none; }
-
-.dobleHuno {
-  font-size: 50px;
-  color: #191825;
-  font-family: 'Merriweather', serif;
-  text-decoration: none;
-  text-align: center;
-  justify-content: center; }
-
-.encontranos {
-  text-align: center; }
-
-iframe {
-  width: 80%;
-  height: 40vh; }
-
-.carruselImg {
-  width: 50%;
-  height: 70vh; }
-
-.cardContainers {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  height: auto;
-  align-items: center;
-  gap: 30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 20px; }
-
-.fondoDeproductos {
-  background-image: url("../assets/images/7.jpeg");
-  background-size: cover;
-  background-position: 100%;
-  height: 900px;
-  background-repeat: no-repeat; }
-
-.mainTamaño {
-  height: auto; }
-
 @media (max-width: 1000px) {
   .fondoProductos {
     height: 900px; }
@@ -248,6 +226,14 @@ iframe {
   .fondoDeproductos {
     height: 900px; } }
 
+@media (max-width: 768px) {
+  .fondoDeproductos {
+    height: 1500px; }
+  .cardContainers {
+    display: flex;
+    gap: 15px;
+    height: 1500px; } }
+
 @media (max-width: 615px) {
   .cardContainer {
     height: 1000px; }
@@ -256,14 +242,6 @@ iframe {
   .card {
     width: 250px;
     height: 300px; } }
-
-@media (max-width: 768px) {
-  .fondoDeproductos {
-    height: 1500px; }
-  .cardContainers {
-    display: flex;
-    gap: 15px;
-    height: 1500px; } }
 
 @media (max-width: 520px) {
   .fondoDeproductos {
@@ -287,6 +265,14 @@ iframe {
     justify-content: center; }
   iframe {
     height: 200px; } }
+
+.dobleHuno {
+  font-size: 50px;
+  color: #191825;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center; }
 
 .grid-container {
   display: grid;
@@ -315,6 +301,3 @@ iframe {
 
 .image4 {
   grid-area: image4; }
-
-.botonHamburguesa {
-  background-color: #E384FF; }
