@@ -1,10 +1,30 @@
 .headerPrincipal {
     background-color: #191825; 
-    .navbar li a{
-        text-decoration: none;
-        color:#E384FF;
-        font-size: 1.25rem;
-        padding: 0%;
+    .navbar {
+        div{
+            div {
+                .mainHuno{
+                    text-align: center;
+                    font-size: 30px;
+                    color: #E384FF;
+                    font-family:'Merriweather', serif;
+                    text-decoration: none;
+                    font-weight:bold;
+                }
+            }
+            div{
+                ul {
+                    li{
+                        a{
+                            text-decoration: none;
+                            color:#E384FF;
+                            font-size: 1.25rem;
+                            padding: 0%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .mainHuno{

@@ -38,7 +38,14 @@ h1 {
 
 .headerPrincipal {
   background-color: #191825; }
-  .headerPrincipal .navbar li a {
+  .headerPrincipal .navbar div div .mainHuno {
+    text-align: center;
+    font-size: 30px;
+    color: #E384FF;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    font-weight: bold; }
+  .headerPrincipal .navbar div div ul li a {
     text-decoration: none;
     color: #E384FF;
     font-size: 1.25rem;
@@ -72,19 +79,40 @@ h1 {
   background-image: url("../assets/images/7.jpeg");
   background-size: cover;
   background-position: 100%; }
-
-.cardContainer {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  height: 500px;
-  background-image: url("../assets/images/7.jpeg");
-  align-items: center;
-  gap: 50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  .fondoProductos .cardContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 500px;
+    background-image: url("../assets/images/7.jpeg");
+    align-items: center;
+    gap: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .fondoProductos .cardContainer .card {
+      width: 18.75rem;
+      height: 25rem;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 1px 1px .625rem black;
+      background-color: #191825;
+      position: relative;
+      z-index: 1; }
+      .fondoProductos .cardContainer .card div {
+        width: 100%;
+        height: 18.5rem; }
+        .fondoProductos .cardContainer .card div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .fondoProductos .cardContainer .card h2 {
+        text-align: center;
+        color: #865DFF; }
+      .fondoProductos .cardContainer .card p {
+        text-align: center;
+        color: #865DFF; }
 
 .sectionNosotros ul {
   background-color: #865DFF;
@@ -101,6 +129,14 @@ h1 {
   .sectionNosotros .encontranos iframe {
     width: 80%;
     height: 40vh; }
+
+.dobleHuno {
+  font-size: 50px;
+  color: #191825;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center; }
 
 .mainTamaño {
   height: auto; }
@@ -142,6 +178,46 @@ h1 {
         position: relative;
         z-index: 1; }
 
+.sectionPrincipal h1 {
+  text-align: center; }
+
+.sectionPrincipal .divProducto {
+  background-color: #865DFF;
+  height: 50px;
+  padding-top: 10px; }
+  .sectionPrincipal .divProducto h1 {
+    justify-content: center;
+    text-align: center;
+    height: 40px; }
+
+.fondoDeproductos {
+  background-image: url("../assets/images/7.jpeg");
+  background-size: cover;
+  background-position: 100%;
+  height: 900px;
+  background-repeat: no-repeat; }
+  .fondoDeproductos .cardContainers {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    gap: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px; }
+    .fondoDeproductos .cardContainers .card {
+      width: 18.75rem;
+      height: 25rem;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 1px 1px .625rem black;
+      background-color: #191825;
+      position: relative;
+      z-index: 1; }
+
 .espacioBlancos {
   background-color: #865DFF;
   width: 100%;
@@ -179,27 +255,32 @@ h1 {
     justify-content: center;
     align-items: center; }
 
-.sectionContacto .formContacto label {
-  color: #191825; }
-
-.sectionContacto .formContacto input {
-  color: #191825; }
-
-.sectionContacto .formContacto .emailInput {
-  align-items: center;
+.sectionContacto {
   text-align: center;
-  height: 20px;
-  display: block; }
-
-.sectionContacto .formContacto .mensajeInput {
-  align-items: center;
-  text-align: center;
-  display: block;
-  height: 100px; }
-
-.sectionContacto .formContacto .btnSubmit {
-  display: block;
-  margin: 0 auto; }
+  color: #E384FF;
+  height: 200px;
+  width: 100%; }
+  .sectionContacto .formContacto {
+    text-align: left;
+    align-items: center;
+    display: inline-block; }
+    .sectionContacto .formContacto label {
+      color: #191825; }
+    .sectionContacto .formContacto input {
+      color: #191825; }
+    .sectionContacto .formContacto .emailInput {
+      align-items: center;
+      text-align: center;
+      height: 20px;
+      display: block; }
+    .sectionContacto .formContacto .mensajeInput {
+      align-items: center;
+      text-align: center;
+      display: block;
+      height: 100px; }
+    .sectionContacto .formContacto .btnSubmit {
+      display: block;
+      margin: 0 auto; }
 
 footer {
   background-color: #191825; }
@@ -220,59 +301,54 @@ footer {
 @media (max-width: 1000px) {
   .fondoProductos {
     height: 900px; }
-  .cardContainer {
-    gap: .9375rem;
-    height: 900px; }
-  .fondoDeproductos {
+    .fondoProductos .cardContainer {
+      gap: .9375rem;
+      height: 900px; }
+  .mainTamaño .sectionPrincipal .fondoDeproductos {
     height: 900px; } }
 
 @media (max-width: 768px) {
-  .fondoDeproductos {
+  .mainTamaño .sectionPrincipal .fondoDeproductos {
     height: 1500px; }
-  .cardContainers {
-    display: flex;
-    gap: 15px;
-    height: 1500px; } }
+    .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers {
+      display: flex;
+      gap: 15px;
+      height: 1500px; } }
 
 @media (max-width: 615px) {
-  .cardContainer {
-    height: 1000px; }
   .fondoProductos {
     height: 1000px; }
-  .card {
+    .fondoProductos .cardContainer {
+      height: 1000px; }
+      .fondoProductos .cardContainer .card {
+        width: 250px;
+        height: 300px; }
+  .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers .card {
     width: 250px;
     height: 300px; } }
 
 @media (max-width: 520px) {
-  .fondoDeproductos {
-    height: 2100px; }
-  .cardContainers {
-    height: 2100px; }
-  .sectionPrincipal {
+  .mainTamaño .sectionPrincipal {
     height: auto; }
-  iframe {
+    .mainTamaño .sectionPrincipal .fondoDeproductos {
+      height: 2100px; }
+      .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers {
+        height: 2100px; }
+  .sectionNosotros .encontranos iframe {
     height: 300px; } }
 
 @media (max-width: 390px) {
-  .cardContainer {
-    height: 1000px; }
   .fondoProductos {
     height: 1000px; }
-  .mainHuno {
+    .fondoProductos .cardContainer {
+      height: 1000px; }
+  .headerPrincipal .navbar div div .mainHuno {
     font-size: 20px; }
   .icono {
     align-items: center;
     justify-content: center; }
   iframe {
     height: 200px; } }
-
-.dobleHuno {
-  font-size: 50px;
-  color: #191825;
-  font-family: 'Merriweather', serif;
-  text-decoration: none;
-  text-align: center;
-  justify-content: center; }
 
 .grid-container {
   display: grid;

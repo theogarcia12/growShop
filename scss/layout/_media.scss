@@ -1,61 +1,97 @@
 @media (max-width: 1000px) {
     .fondoProductos {
         height: 900px;
+        .cardContainer {
+            gap: .9375rem;
+            height: 900px;
+        }
     }
-    .cardContainer {
-        gap: .9375rem;
-        height: 900px;
-    }
-    .fondoDeproductos{
-        height: 900px;
+    .mainTamaño{
+        .sectionPrincipal{
+            .fondoDeproductos{
+            height: 900px;
+            }
+        }
     }
 }
-@media(max-width:768px){
 
-    .fondoDeproductos {
-        height: 1500px;
-    }
-    .cardContainers{
-        display: flex;
-        gap: 15px;
-        height: 1500px;
+@media(max-width:768px){
+    .mainTamaño{
+        .sectionPrincipal{
+            .fondoDeproductos{
+                height: 1500px;
+                .cardContainers{
+                    display: flex;
+                    gap: 15px;
+                    height: 1500px;
+                }
+            }
+        }
     }
 }
+
 @media (max-width: 615px) {
-    .cardContainer{
+    .fondoProductos{
         height: 1000px;
+        .cardContainer{
+            height: 1000px;
+            .card {
+                width: 250px;
+                height: 300px;
+            }
+        }
     }
-    .fondoProductos {
-        height: 1000px;
-    }
-    .card {
-        width: 250px;
-        height: 300px;
+    .mainTamaño{
+        .sectionPrincipal{
+            .fondoDeproductos{
+                .cardContainers{
+                    .card {
+                        width: 250px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
     }
 }
+
 @media(max-width:520px) {
-    .fondoDeproductos {
-        height: 2100px;
+    .mainTamaño{
+        .sectionPrincipal{
+            height: auto;
+            .fondoDeproductos{
+                height: 2100px;
+                .cardContainers{
+                    height: 2100px;
+                }
+            }
+        }
     }
-    .cardContainers{
-        height: 2100px;
-    }
-    .sectionPrincipal{
-        height: auto;
-    }
-    iframe {
-        height: 300px;
+    .sectionNosotros {
+        .encontranos {
+            iframe {
+                height: 300px;
+                }
+        }
     }
 }
 @media(max-width:390px){
-    .cardContainer{
+    .fondoProductos {
         height: 1000px;
+        .cardContainer{
+            height: 1000px;
+        }
     }
-    .fondoProductos{
-        height: 1000px;
-    }
-    .mainHuno{
-        font-size: 20px;
+    .headerPrincipal{
+        .navbar{
+            div{
+                div{
+                    .mainHuno{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
     .icono {
         align-items: center;
