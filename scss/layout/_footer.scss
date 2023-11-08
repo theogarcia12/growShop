@@ -1,9 +1,11 @@
 footer {
     background-color:#191825;
+    box-shadow: 2px 1px .625rem black;
     .divFooter {
         width: 100%;
         height: 20rem;
         .contactanos {
+            padding-top: 20px;
             text-align: center;
             color: #E384FF;
             text-decoration: none;
@@ -14,6 +16,24 @@ footer {
                 text-decoration: none;
                 color: #E384FF;
             }
+        }
+        .redes {
+            text-align: right;
+            color: #E384FF;
+            padding-right: 20px;
+            text-decoration: none;
+            color: #E384FF;
+            img{
+                padding-right:5px ;
+                a{
+                    text-decoration: none;
+                    color: #E384FF;
+                }
+            }
+        }
+        .copyRight {
+            justify-content: baseline;
+            text-align: center; 
         }
     }
 }

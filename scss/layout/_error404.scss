@@ -1,0 +1,34 @@
+.error{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    img{
+        justify-content: center;
+        align-items: center ;
+    }
+}
+.divError{
+    background-color: #865DFF;
+    h2{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .cardsError{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        height: 500px;
+        align-items: center;
+        gap: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

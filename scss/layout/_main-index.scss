@@ -9,6 +9,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;  
+    box-shadow: 1px 1px .625rem black;
     .classOferta{
         text-align: center;
         justify-content: center;
@@ -61,7 +62,9 @@
         }
     }
 }
-
+.carousel{
+    box-shadow: 1px 1px .625rem black;
+}
 
 .sectionNosotros{
     ul {
@@ -71,23 +74,24 @@
         list-style: none;
         width: 100%
         padding 0;
+        box-shadow: 1px 1px .625rem black;
     }
     h2{
         text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .encontranos{
         text-align: center;
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
         iframe{
             width: 80%; 
             height: 40vh;
+            margin-bottom: 40px;
+            margin-top: 10px;
         }
     }
-}
-.dobleHuno {
-    font-size: 50px;
-    color: #191825;
-    font-family:'Merriweather', serif;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
 }
