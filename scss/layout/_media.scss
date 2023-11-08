@@ -9,7 +9,7 @@
     .mainTamaño{
         .sectionPrincipal{
             .fondoDeproductos{
-            height: 900px;
+            height: 1350px;
             }
         }
     }
@@ -24,6 +24,21 @@
                     display: flex;
                     gap: 15px;
                     height: 1500px;
+                }
+            }
+        }
+    }
+    .mainTamaño{
+        .grid-container {
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "image1"
+            "image2"
+            "image3"
+            "image4";
+            .image {
+                .image1, .image2, .image3, .image4 {
+                    margin-bottom: 20px; 
                 }
             }
         }
