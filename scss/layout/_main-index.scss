@@ -67,6 +67,27 @@
 }
 
 .sectionNosotros{
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1px;
+        border: 1px solid #191825;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        background-color: #191825;
+        box-shadow: 1px 1px .625rem black;
+        .grid-header, .grid-item {
+            text-align: center;
+            padding: 10px;
+            background-color: #865DFF;
+            border: 1px solid #191825;
+        }
+        .grid-header {
+            font-weight: bold;
+        }
+    }
+    
     ul {
         background-color: #865DFF;
         font-size: 20px;

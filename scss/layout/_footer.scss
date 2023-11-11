@@ -7,7 +7,7 @@ footer {
         .contactanos {
             padding-top: 20px;
             text-align: center;
-            color: #E384FF;
+            color: #865DFF;
             text-decoration: none;
             justify-content: center;
             a{ 
@@ -19,20 +19,18 @@ footer {
         }
         .redes {
             text-align: right;
+            list-style-type: none;
+            a{
+            text-align: right;
             color: #E384FF;
             padding-right: 20px;
             text-decoration: none;
-            color: #E384FF;
+            }
             img{
                 padding-right:5px ;
-                a{
-                    text-decoration: none;
-                    color: #E384FF;
-                }
             }
         }
         .copyRight {
-            justify-content: baseline;
             text-align: center; 
         }
     }

@@ -14,6 +14,16 @@
         }
     }
 }
+@media(max-width:836px){
+    .sectionNosotros{
+        .grid-container {
+            width: 100%;
+            .grid-header, .grid-item{
+                font-size: 12px;
+            }
+        }
+    }
+}
 
 @media(max-width:768px){
     .mainTamaño{
@@ -68,6 +78,14 @@
             }
         }
     }
+    .divError{
+        height: 1000px;
+        .cardsError{
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+    }
 }
 
 @media(max-width:520px) {
@@ -81,6 +99,14 @@
                 }
             }
         }
+    }
+    .error{
+        img{
+
+        }
+    }
+    .divError{
+        height: 1000px;
     }
     .sectionNosotros {
         .encontranos {
