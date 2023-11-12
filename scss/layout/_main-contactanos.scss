@@ -1,3 +1,90 @@
+.form-container {
+    background-color: #E384FF;
+    padding: 20px;
+    box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    form{
+        display: flex;
+        flex-direction: column;
+        .form-group{
+            margin-bottom: 20px;
+            label{
+                font-weight: bold;
+                margin-bottom: 8px;
+                color: #191825;
+            }
+            input{
+                padding: 10px;
+                border: 1px solid #191825;
+                border-radius: 4px;
+            }
+            button {
+                padding: 10px;
+                background-color: #191825;
+                color: #FFF;
+                border: none;
+                border-radius: 4px;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: #865DFF;
+                }
+            }
+        }
+    }
+}
+.preguntasFrecu{
+    background-color: #865DFF;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px .625rem black;
+    h2{
+        color: #191825;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        padding-top: 10px;
+        background-color: #865DFF;
+    }
+    div{
+        color: #191825  ;
+        background-color: #E384FF;
+        div{
+            color: #191825  ;
+            background-color: #E384FF;
+            border: none;
+            h2{
+                .accordion-button{
+                    border-color: none;
+                }
+                .accordion-button:not(.collapsed){
+                    color: #E384FF;
+                    background-color: #191825;
+                    border-color: #191825;
+                    z-index: 0;
+                }
+                .accordion-button:focus{
+                    border-color: #191825;
+                    color: #E384FF;
+                    box-shadow: none;
+                }
+                .accordion-button:not(.collapsed)::after {
+                    color: #E384FF;
+                }
+                button{
+                    background-color: #191825;
+                    color: #E384FF;
+                    border: 1px solid #191825;
+                }
+            }
+            div{
+                .accordion-body{
+                    border: .0625rem solid #191825;
+                }
+            }
+        }
+    }
+}
 .espacioBlanco{
     background-color: #865DFF ;
     width: 100%;
@@ -19,12 +106,23 @@
 .sectionContacto{
     text-align: center;
     color: #E384FF;
-    height: 200px;
+    height: 500px;
     width: 100%;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    div{
+        color: #191825;
+        input, span{
+            color:#191825;
+        }
+    }
     .formContacto {
         text-align: left;
         align-items: center;
         display: inline-block;
+        height: 200px;
+        padding-top: 30px;
         label{
             color: #191825;
         }

@@ -20,7 +20,13 @@
             width: 100%;
             .grid-header, .grid-item{
                 font-size: 12px;
+                padding: 5px;
             }
+        }
+    }
+    .divFooter {
+        .contactanos{
+            font-size: 20px;
         }
     }
 }
@@ -72,7 +78,7 @@
                 .cardContainers{
                     .card {
                         width: 250px;
-                        height: 300px;
+                        height: 340px;
                     }
                 }
             }
@@ -86,6 +92,11 @@
             height: auto;
         }
     }
+    .divFooter{
+        .contactanos{
+            font-size: 13px
+        }
+    }
 }
 
 @media(max-width:520px) {
@@ -93,16 +104,15 @@
         .sectionPrincipal{
             height: auto;
             .fondoDeproductos{
-                height: 2100px;
+                height: 2240px;
                 .cardContainers{
-                    height: 2100px;
+                    height: 2240px;
                 }
             }
         }
     }
     .error{
         img{
-
         }
     }
     .divError{
@@ -115,8 +125,42 @@
                 }
         }
     }
+    footer{
+        .divFooter{
+            .redes{
+                font-size: 13px;
+                a{
+                    padding: 7px;
+                    padding-bottom: 10px;
+                    img {
+                    width: 25px;
+                    height: 20px;
+                    }
+                }
+            }
+            .copyRight{
+                font-size: 13px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .sectionNosotros{
+        .grid-container {
+            width: 100%;
+            .grid-header, .grid-item{
+                font-size: 8px;
+                padding: 2px;
+                border: 0.4px solid #191825;
+            }
+        }
+    }
 }
 @media(max-width:390px){
+    .espacioBlanco{
+        .classOferta{
+            font-size: 25px;
+        }
+    }
     .fondoProductos {
         height: 1000px;
         .cardContainer{
@@ -140,5 +184,18 @@
     }
     iframe {
         height: 200px;
+    }
+    .divFooter{
+        .contactanos{
+            padding: 5px;
+        }
+        .redes{
+            padding: 5px;
+        }
+    }
+    .espacioBlanco{
+        h1{
+            font-size: 20px;
+        }
     }
 }

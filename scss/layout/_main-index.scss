@@ -67,6 +67,12 @@
 }
 
 .sectionNosotros{
+    h2{
+        padding-bottom: 30px;
+        margin: 10px;
+        text-align: center;
+        height: 50px;
+    }
     .grid-container {
         display: grid;
         grid-template-columns: repeat(8, 1fr);

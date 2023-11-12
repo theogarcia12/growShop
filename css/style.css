@@ -112,6 +112,12 @@ h1 {
 .carousel {
   box-shadow: 1px 1px .625rem black; }
 
+.sectionNosotros h2 {
+  padding-bottom: 30px;
+  margin: 10px;
+  text-align: center;
+  height: 50px; }
+
 .sectionNosotros .grid-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -214,6 +220,74 @@ h1 {
   text-align: center;
   height: 300px; }
 
+.form-container {
+  background-color: #E384FF;
+  padding: 20px;
+  box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+  height: 250px; }
+  .form-container form {
+    display: flex;
+    flex-direction: column; }
+    .form-container form .form-group {
+      margin-bottom: 20px; }
+      .form-container form .form-group label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #191825; }
+      .form-container form .form-group input {
+        padding: 10px;
+        border: 1px solid #191825;
+        border-radius: 4px; }
+      .form-container form .form-group button {
+        padding: 10px;
+        background-color: #191825;
+        color: #FFF;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer; }
+        .form-container form .form-group button:hover {
+          background-color: #865DFF; }
+
+.preguntasFrecu {
+  background-color: #865DFF;
+  padding-bottom: 10px;
+  box-shadow: 1px 1px .625rem black; }
+  .preguntasFrecu h2 {
+    color: #191825;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    padding-top: 10px;
+    background-color: #865DFF; }
+  .preguntasFrecu div {
+    color: #191825;
+    background-color: #E384FF; }
+    .preguntasFrecu div div {
+      color: #191825;
+      background-color: #E384FF;
+      border: none; }
+      .preguntasFrecu div div h2 .accordion-button {
+        border-color: none; }
+      .preguntasFrecu div div h2 .accordion-button:not(.collapsed) {
+        color: #E384FF;
+        background-color: #191825;
+        border-color: #191825;
+        z-index: 0; }
+      .preguntasFrecu div div h2 .accordion-button:focus {
+        border-color: #191825;
+        color: #E384FF;
+        box-shadow: none; }
+      .preguntasFrecu div div h2 .accordion-button:not(.collapsed)::after {
+        color: #E384FF; }
+      .preguntasFrecu div div h2 button {
+        background-color: #191825;
+        color: #E384FF;
+        border: 1px solid #191825; }
+      .preguntasFrecu div div div .accordion-body {
+        border: .0625rem solid #191825; }
+
 .espacioBlanco {
   background-color: #865DFF;
   width: 100%;
@@ -233,12 +307,21 @@ h1 {
 .sectionContacto {
   text-align: center;
   color: #E384FF;
-  height: 200px;
-  width: 100%; }
+  height: 500px;
+  width: 100%;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center; }
+  .sectionContacto div {
+    color: #191825; }
+    .sectionContacto div input, .sectionContacto div span {
+      color: #191825; }
   .sectionContacto .formContacto {
     text-align: left;
     align-items: center;
-    display: inline-block; }
+    display: inline-block;
+    height: 200px;
+    padding-top: 30px; }
     .sectionContacto .formContacto label {
       color: #191825; }
     .sectionContacto .formContacto input {
@@ -331,14 +414,23 @@ footer {
         color: #E384FF; }
     footer .divFooter .redes {
       text-align: right;
-      list-style-type: none; }
+      list-style-type: none;
+      margin-bottom: 15px;
+      height: 50px; }
       footer .divFooter .redes a {
-        text-align: right;
+        text-align: center;
         color: #E384FF;
-        padding-right: 20px;
-        text-decoration: none; }
-      footer .divFooter .redes img {
-        padding-right: 5px; }
+        margin-right: 20px;
+        padding: 9px;
+        text-decoration: none;
+        border: 1px solid #E384FF;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+        border-radius: 8px; }
+        footer .divFooter .redes a img {
+          padding-right: 5px; }
     footer .divFooter .copyRight {
       text-align: center; }
 
@@ -355,7 +447,10 @@ footer {
   .sectionNosotros .grid-container {
     width: 100%; }
     .sectionNosotros .grid-container .grid-header, .sectionNosotros .grid-container .grid-item {
-      font-size: 12px; } }
+      font-size: 12px;
+      padding: 5px; }
+  .divFooter .contactanos {
+    font-size: 20px; } }
 
 @media (max-width: 768px) {
   .mainTamaño .sectionPrincipal .fondoDeproductos {
@@ -380,27 +475,48 @@ footer {
         height: 300px; }
   .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers .card {
     width: 250px;
-    height: 300px; }
+    height: 340px; }
   .divError {
     height: 1000px; }
     .divError .cardsError {
       justify-content: center;
       align-items: center;
-      height: auto; } }
+      height: auto; }
+  .divFooter .contactanos {
+    font-size: 13px; } }
 
 @media (max-width: 520px) {
   .mainTamaño .sectionPrincipal {
     height: auto; }
     .mainTamaño .sectionPrincipal .fondoDeproductos {
-      height: 2100px; }
+      height: 2240px; }
       .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers {
-        height: 2100px; }
+        height: 2240px; }
   .divError {
     height: 1000px; }
   .sectionNosotros .encontranos iframe {
-    height: 300px; } }
+    height: 300px; }
+  footer .divFooter .redes {
+    font-size: 13px; }
+    footer .divFooter .redes a {
+      padding: 7px;
+      padding-bottom: 10px; }
+      footer .divFooter .redes a img {
+        width: 25px;
+        height: 20px; }
+  footer .divFooter .copyRight {
+    font-size: 13px;
+    margin-top: 20px; }
+  .sectionNosotros .grid-container {
+    width: 100%; }
+    .sectionNosotros .grid-container .grid-header, .sectionNosotros .grid-container .grid-item {
+      font-size: 8px;
+      padding: 2px;
+      border: 0.4px solid #191825; } }
 
 @media (max-width: 390px) {
+  .espacioBlanco .classOferta {
+    font-size: 25px; }
   .fondoProductos {
     height: 1000px; }
     .fondoProductos .cardContainer {
@@ -411,4 +527,10 @@ footer {
     align-items: center;
     justify-content: center; }
   iframe {
-    height: 200px; } }
+    height: 200px; }
+  .divFooter .contactanos {
+    padding: 5px; }
+  .divFooter .redes {
+    padding: 5px; }
+  .espacioBlanco h1 {
+    font-size: 20px; } }
