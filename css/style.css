@@ -164,7 +164,7 @@ h1 {
   background-image: url("../assets/images/7.jpeg");
   background-size: cover;
   background-position: 100%;
-  height: 1500px;
+  height: 1300px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -184,7 +184,8 @@ h1 {
       gap: 30px;
       flex-wrap: wrap;
       justify-content: space-around;
-      list-style: none; }
+      list-style: none;
+      padding-left: 0px; }
       .divComprar .cardCompra ul li h3, .divComprar .cardCompra ul li h2, .divComprar .cardCompra ul li p {
         text-align: center;
         color: #E384FF; }
@@ -238,17 +239,19 @@ h1 {
 
 .mainTamaño {
   height: auto; }
-  .mainTamaño .sectionPrincipal h1 {
-    text-align: center; }
   .mainTamaño .sectionPrincipal .divProducto {
     background-color: #865DFF;
     height: 50px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    box-shadow: 1px 1px .625rem black; }
     .mainTamaño .sectionPrincipal .divProducto h1 {
       justify-content: center;
       text-align: center;
       height: 40px;
-      font-size: 30px; }
+      font-size: 30px;
+      align-items: center;
+      margin: 0px;
+      padding-bottom: 10px; }
   .mainTamaño .sectionPrincipal .fondoDeproductos {
     background-image: url("../assets/images/7.jpeg");
     background-size: cover;
@@ -300,7 +303,8 @@ h1 {
   background-color: #E384FF;
   padding: 20px;
   box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
-  height: 250px; }
+  height: 250px;
+  z-index: 1; }
   .form-container form {
     display: flex;
     flex-direction: column; }
@@ -374,7 +378,8 @@ h1 {
   overflow: hidden;
   text-align: center;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 1px 1px .625rem black; }
   .espacioBlanco h1 {
     text-align: center;
     justify-content: center;
@@ -421,13 +426,11 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "image1 image2" "image3 image4";
   grid-gap: 20px;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 1200px; }
+  margin: 0px;
+  overflow: hidden; }
   .mainTamaño .grid-container .image {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    object-fit: cover; }
+    text-align: center; }
 
 .image1 {
   grid-area: image1; }
@@ -484,7 +487,7 @@ h1 {
   background-image: url("../assets/images/7.jpeg");
   background-size: cover;
   background-position: 100%;
-  height: 1500px;
+  height: 1300px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -504,7 +507,8 @@ h1 {
       gap: 30px;
       flex-wrap: wrap;
       justify-content: space-around;
-      list-style: none; }
+      list-style: none;
+      padding-left: 0px; }
       .divComprar .cardCompra ul li h3, .divComprar .cardCompra ul li h2, .divComprar .cardCompra ul li p {
         text-align: center;
         color: #E384FF; }
@@ -596,10 +600,12 @@ footer {
       text-align: center; }
 
 @media (max-width: 1388px) {
-  .divComprar .cardCompra {
-    height: 650px; }
-    .divComprar .cardCompra ul .botonesProduct {
-      margin-top: 0px; } }
+  .divComprar {
+    height: 1400px; }
+    .divComprar .cardCompra {
+      height: 650px; }
+      .divComprar .cardCompra ul .botonesProduct {
+        margin-top: 0px; } }
 
 @media (max-width: 1089px) {
   .divComprar {
@@ -649,7 +655,7 @@ footer {
         width: 250px;
         height: 300px; }
   .divComprar {
-    height: 2000px; }
+    height: 1760px; }
     .divComprar .cardCompra {
       height: 800px; }
       .divComprar .cardCompra ul .tituloP {
@@ -710,6 +716,8 @@ footer {
 @media (max-width: 390px) {
   .espacioBlanco .classOferta {
     font-size: 25px; }
+  .mainTamaño .sectionPrincipal .divProducto h1 {
+    font-size: 25px; }
   .fondoProductos {
     height: 1000px; }
     .fondoProductos .cardContainer {
@@ -730,4 +738,12 @@ footer {
   .errorDiv {
     height: 500px; }
     .errorDiv .error {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+  .divComprar {
+    height: 1820px; }
+    .divComprar .cardCompra {
+      height: 850px; }
+      .divComprar .cardCompra ul .botonesProduct {
+        padding-bottom: 30px; }
+  .form-container {
+    height: 310px; } }

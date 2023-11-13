@@ -1,5 +1,6 @@
 @media (max-width: 1388px) {
     .divComprar{
+        height: 1400px;
         .cardCompra{
             height: 650px;
             ul{
@@ -99,7 +100,7 @@
         }
     }
     .divComprar{
-        height: 2000px;
+        height: 1760px;
         .cardCompra{
             height: 800px;
             ul{
@@ -213,6 +214,15 @@
             font-size: 25px;
         }
     }
+    .mainTamaño{
+        .sectionPrincipal{
+            .divProducto{
+                h1{
+                font-size: 25px;
+                }
+            }
+        }
+    }
     .fondoProductos {
         height: 1000px;
         .cardContainer{
@@ -255,5 +265,27 @@
         .error{
             margin-top: 40px;
         }
+    }
+    .divComprar{
+        height: 1820px;
+        .cardCompra{
+            height: 850px;
+            ul{
+                .tituloP{
+                    
+                }
+                .cardLi{
+                    .cardProducto{
+                        
+                    }                    
+                }
+                .botonesProduct{
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+    .form-container{
+        height: 310px;
     }
 }
