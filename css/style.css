@@ -441,35 +441,44 @@ h1 {
 .image4 {
   grid-area: image4; }
 
-.error {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center; }
-  .error h1 {
-    font-size: 30px; }
-  .error p {
-    font-size: 20px; }
-  .error img {
-    justify-content: center;
-    align-items: center;
-    width: 80%; }
-
-.divError {
-  background-color: #865DFF; }
-  .divError h2 {
+.errorDiv {
+  height: 700px; }
+  .errorDiv .error {
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    padding-top: 10px; }
-  .divError .cardsError {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    height: 500px;
-    align-items: center;
-    gap: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: space-around; }
+    background-color: #191825;
+    margin-top: 100px;
+    box-shadow: 1px 1px .625rem black; }
+    .errorDiv .error ul {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0px; }
+      .errorDiv .error ul li h1 {
+        font-size: 30px;
+        color: #E384FF; }
+      .errorDiv .error ul li p {
+        font-size: 20px;
+        color: #E384FF; }
+      .errorDiv .error ul li img {
+        background-color: #191825;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-shadow: 1px 1px .625rem black; }
+      .errorDiv .error ul li button {
+        background-color: #E384FF;
+        border-color: #E384FF;
+        box-shadow: 1px 1px .625rem black; }
+        .errorDiv .error ul li button a {
+          text-decoration: none;
+          color: black; }
 
 .divComprar {
   background-image: url("../assets/images/7.jpeg");
@@ -717,4 +726,8 @@ footer {
   .divFooter .redes {
     padding: 5px; }
   .espacioBlanco h1 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .errorDiv {
+    height: 500px; }
+    .errorDiv .error {
+      margin-top: 40px; } }
