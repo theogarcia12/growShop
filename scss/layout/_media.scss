@@ -1,3 +1,35 @@
+@media (max-width: 1388px) {
+    .divProducto{
+        .cardCompra{
+            height: 650px;
+            ul{
+                .botonesProduct{
+                    margin-top: 0px;
+                }
+                .tituloP{
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1089px){
+    .divProducto{
+        height: 2000px;
+        .cardCompra{
+            height: 1200px;
+            ul{
+                .botonesProduct{
+                }
+                .tituloP{
+                }
+                .cardLi{
+                    justify-content: left;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .fondoProductos {
         height: 900px;
@@ -69,6 +101,38 @@
             .card {
                 width: 250px;
                 height: 300px;
+            }
+        }
+    }
+    .divProducto{
+        height: 2000px;
+        .cardCompra{
+            height: 800px;
+            ul{
+                .botonesProduct{
+                }
+                .tituloP{
+                    margin-bottom: 100px;
+                }
+                .cardLi{
+                    .cardProducto{
+                        height: 300px;
+                        div{
+                            display: none;
+                        }
+                    }                    
+                }
+            }
+        }
+        .cardBasado{
+        height: 800px;
+            .cardRecomendado{
+                flex-direction: column;
+                height: 700px;
+                .card{
+                    width: 250px;
+                    height: 300px;
+                }
             }
         }
     }

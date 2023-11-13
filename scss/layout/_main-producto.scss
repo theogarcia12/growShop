@@ -1,0 +1,100 @@
+.divProducto{
+    background-image: url("../assets/images/7.jpeg");
+    background-size: cover;
+    background-position: 100%;
+    height: 1500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+    .cardCompra{
+        background-color: #191825;
+        margin-top: 30px;
+        height: 550px;
+        box-shadow: 1px 1px .625rem black;
+        margin-bottom: 50px;
+        ul{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            list-style: none;
+            .cardLi{
+            }
+            li{
+                h3, h2, p{
+                    text-align: center;
+                    color: #E384FF;
+                }
+                h3{
+                    padding-top: 50px;
+                }
+                .cardProducto{
+                    height: 450px;
+                    border-radius: 1.25rem;
+                    box-shadow: 1px 1px .625rem #E384FF;
+                    background-color: #191825;
+                    position: relative;
+                    z-index: 1;
+                    margin-top: 40px;
+                    div{
+                        h5, p, a{
+                            color: #E384FF;
+                        }
+                    }
+                }
+            }
+            .tituloP{
+                margin-bottom: 300px;
+                z-index: 1;
+            }
+            .botonesProduct{
+                z-index: 0;
+                margin-top: 450px;
+                .btn-group{
+                    button{
+                        a{
+                            text-decoration: none;
+                            color: #E384FF;
+                        }
+                    }
+                    .btn-primary {
+                        background-color: #191825;
+                        color: #E384FF;
+                    }
+                    .btn{
+                        border-color: #E384FF;
+                    }
+                }
+            }
+        }
+    }
+    .cardBasado{
+        background-color: #191825;
+        margin-top: 30px;
+        height: 550px;
+        box-shadow: 1px 1px .625rem black;
+        margin-bottom: 30px;
+        h2{
+            color: #E384FF;
+            text-align: center;
+            padding-top: 15px;
+        }
+        .cardRecomendado{
+            display: flex;
+            width: 100%;
+            flex-direction:row;
+            height: 300px;
+            align-items: center;
+            gap: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
