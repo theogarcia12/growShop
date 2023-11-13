@@ -1,4 +1,4 @@
-.divProducto{
+.divComprar{
     background-image: url("../assets/images/7.jpeg");
     background-size: cover;
     background-position: 100%;
@@ -23,8 +23,6 @@
             flex-wrap: wrap;
             justify-content: space-around; 
             list-style: none;
-            .cardLi{
-            }
             li{
                 h3, h2, p{
                     text-align: center;

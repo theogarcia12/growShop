@@ -160,7 +160,7 @@ h1 {
     margin-bottom: 40px;
     margin-top: 10px; }
 
-.divProducto {
+.divComprar {
   background-image: url("../assets/images/7.jpeg");
   background-size: cover;
   background-position: 100%;
@@ -170,13 +170,13 @@ h1 {
   text-align: center;
   width: 100%;
   padding-top: 25px; }
-  .divProducto .cardCompra {
+  .divComprar .cardCompra {
     background-color: #191825;
     margin-top: 30px;
     height: 550px;
     box-shadow: 1px 1px .625rem black;
     margin-bottom: 50px; }
-    .divProducto .cardCompra ul {
+    .divComprar .cardCompra ul {
       display: flex;
       width: 100%;
       flex-direction: row;
@@ -185,12 +185,12 @@ h1 {
       flex-wrap: wrap;
       justify-content: space-around;
       list-style: none; }
-      .divProducto .cardCompra ul li h3, .divProducto .cardCompra ul li h2, .divProducto .cardCompra ul li p {
+      .divComprar .cardCompra ul li h3, .divComprar .cardCompra ul li h2, .divComprar .cardCompra ul li p {
         text-align: center;
         color: #E384FF; }
-      .divProducto .cardCompra ul li h3 {
+      .divComprar .cardCompra ul li h3 {
         padding-top: 50px; }
-      .divProducto .cardCompra ul li .cardProducto {
+      .divComprar .cardCompra ul li .cardProducto {
         height: 450px;
         border-radius: 1.25rem;
         box-shadow: 1px 1px .625rem #E384FF;
@@ -198,33 +198,33 @@ h1 {
         position: relative;
         z-index: 1;
         margin-top: 40px; }
-        .divProducto .cardCompra ul li .cardProducto div h5, .divProducto .cardCompra ul li .cardProducto div p, .divProducto .cardCompra ul li .cardProducto div a {
+        .divComprar .cardCompra ul li .cardProducto div h5, .divComprar .cardCompra ul li .cardProducto div p, .divComprar .cardCompra ul li .cardProducto div a {
           color: #E384FF; }
-      .divProducto .cardCompra ul .tituloP {
+      .divComprar .cardCompra ul .tituloP {
         margin-bottom: 300px;
         z-index: 1; }
-      .divProducto .cardCompra ul .botonesProduct {
+      .divComprar .cardCompra ul .botonesProduct {
         z-index: 0;
         margin-top: 450px; }
-        .divProducto .cardCompra ul .botonesProduct .btn-group button a {
+        .divComprar .cardCompra ul .botonesProduct .btn-group button a {
           text-decoration: none;
           color: #E384FF; }
-        .divProducto .cardCompra ul .botonesProduct .btn-group .btn-primary {
+        .divComprar .cardCompra ul .botonesProduct .btn-group .btn-primary {
           background-color: #191825;
           color: #E384FF; }
-        .divProducto .cardCompra ul .botonesProduct .btn-group .btn {
+        .divComprar .cardCompra ul .botonesProduct .btn-group .btn {
           border-color: #E384FF; }
-  .divProducto .cardBasado {
+  .divComprar .cardBasado {
     background-color: #191825;
     margin-top: 30px;
     height: 550px;
     box-shadow: 1px 1px .625rem black;
     margin-bottom: 30px; }
-    .divProducto .cardBasado h2 {
+    .divComprar .cardBasado h2 {
       color: #E384FF;
       text-align: center;
       padding-top: 15px; }
-    .divProducto .cardBasado .cardRecomendado {
+    .divComprar .cardBasado .cardRecomendado {
       display: flex;
       width: 100%;
       flex-direction: row;
