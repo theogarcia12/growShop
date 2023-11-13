@@ -511,17 +511,17 @@ footer {
       text-align: center; }
 
 @media (max-width: 1388px) {
-  .divProducto .cardCompra {
+  .divComprar .cardCompra {
     height: 650px; }
-    .divProducto .cardCompra ul .botonesProduct {
+    .divComprar .cardCompra ul .botonesProduct {
       margin-top: 0px; } }
 
 @media (max-width: 1089px) {
-  .divProducto {
+  .divComprar {
     height: 2000px; }
-    .divProducto .cardCompra {
+    .divComprar .cardCompra {
       height: 1200px; }
-      .divProducto .cardCompra ul .cardLi {
+      .divComprar .cardCompra ul .cardLi {
         justify-content: left; } }
 
 @media (max-width: 1000px) {
@@ -563,22 +563,22 @@ footer {
       .fondoProductos .cardContainer .card {
         width: 250px;
         height: 300px; }
-  .divProducto {
+  .divComprar {
     height: 2000px; }
-    .divProducto .cardCompra {
+    .divComprar .cardCompra {
       height: 800px; }
-      .divProducto .cardCompra ul .tituloP {
+      .divComprar .cardCompra ul .tituloP {
         margin-bottom: 100px; }
-      .divProducto .cardCompra ul .cardLi .cardProducto {
+      .divComprar .cardCompra ul .cardLi .cardProducto {
         height: 300px; }
-        .divProducto .cardCompra ul .cardLi .cardProducto div {
+        .divComprar .cardCompra ul .cardLi .cardProducto div {
           display: none; }
-    .divProducto .cardBasado {
+    .divComprar .cardBasado {
       height: 800px; }
-      .divProducto .cardBasado .cardRecomendado {
+      .divComprar .cardBasado .cardRecomendado {
         flex-direction: column;
         height: 700px; }
-        .divProducto .cardBasado .cardRecomendado .card {
+        .divComprar .cardBasado .cardRecomendado .card {
           width: 250px;
           height: 300px; }
   .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers .card {
