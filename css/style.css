@@ -38,6 +38,10 @@ h1 {
 
 .headerPrincipal {
   background-color: #191825; }
+  .headerPrincipal .navbar div button {
+    background-color: #191825; }
+    .headerPrincipal .navbar div button span {
+      background-color: #E384FF; }
   .headerPrincipal .navbar div div .mainHuno {
     text-align: center;
     font-size: 30px;
@@ -111,6 +115,15 @@ h1 {
 
 .carousel {
   box-shadow: 1px 1px .625rem black; }
+  .carousel div div div {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 250px; }
+    .carousel div div div h3, .carousel div div div p {
+      color: #FFF;
+      font-weight: 600; }
+    .carousel div div div p {
+      font-size: 20px; }
 
 .sectionNosotros h2 {
   padding-bottom: 30px;
@@ -256,8 +269,25 @@ h1 {
     background-image: url("../assets/images/7.jpeg");
     background-size: cover;
     background-position: 100%;
-    height: 900px;
+    height: 1000px;
     background-repeat: no-repeat; }
+    .mainTamaño .sectionPrincipal .fondoDeproductos .dropdown {
+      padding-top: 10px;
+      padding-left: 30px; }
+      .mainTamaño .sectionPrincipal .fondoDeproductos .dropdown .btn-secondary {
+        color: #E384FF;
+        background-color: #191825;
+        border-color: #E384FF; }
+        .mainTamaño .sectionPrincipal .fondoDeproductos .dropdown .btn-secondary:hover {
+          background-color: #865DFF; }
+      .mainTamaño .sectionPrincipal .fondoDeproductos .dropdown .dropdown-menu {
+        color: #E384FF;
+        background-color: #191825;
+        border-color: #E384FF; }
+        .mainTamaño .sectionPrincipal .fondoDeproductos .dropdown .dropdown-menu li a {
+          color: #E384FF; }
+          .mainTamaño .sectionPrincipal .fondoDeproductos .dropdown .dropdown-menu li a:hover {
+            background-color: #865DFF; }
     .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers {
       display: flex;
       width: 100%;
@@ -267,7 +297,8 @@ h1 {
       gap: 30px;
       flex-wrap: wrap;
       justify-content: space-around;
-      padding-top: 20px; }
+      padding-top: 20px;
+      padding-bottom: 20px; }
       .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers .card {
         width: 18.75rem;
         height: 25rem;
@@ -277,6 +308,27 @@ h1 {
         background-color: #191825;
         position: relative;
         z-index: 1; }
+    .mainTamaño .sectionPrincipal .fondoDeproductos nav .pagination {
+      justify-content: center;
+      color: #191825;
+      border-color: #191825;
+      overflow: hidden; }
+      .mainTamaño .sectionPrincipal .fondoDeproductos nav .pagination .page-item {
+        background-color: #865DFF;
+        overflow: hidden; }
+        .mainTamaño .sectionPrincipal .fondoDeproductos nav .pagination .page-item:hover {
+          background-color: #E384FF; }
+        .mainTamaño .sectionPrincipal .fondoDeproductos nav .pagination .page-item .page-link {
+          border-color: #191825;
+          color: #191825;
+          background-color: #865DFF;
+          overflow: hidden; }
+          .mainTamaño .sectionPrincipal .fondoDeproductos nav .pagination .page-item .page-link:hover {
+            background-color: #E384FF; }
+    .mainTamaño .sectionPrincipal .fondoDeproductos nav ul {
+      justify-content: center; }
+      .mainTamaño .sectionPrincipal .fondoDeproductos nav ul li {
+        background-color: #865DFF; }
 
 .espacioBlancos {
   background-color: #865DFF;
@@ -560,6 +612,48 @@ h1 {
       flex-wrap: wrap;
       justify-content: space-around; }
 
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;
+    transform: translateX(0) translateY(0); }
+  100% {
+    box-shadow: 1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px); } }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 footer {
   background-color: #191825;
   box-shadow: 2px 1px .625rem black; }
@@ -576,7 +670,9 @@ footer {
         text-align: center;
         justify-content: center;
         text-decoration: none;
-        color: #E384FF; }
+        color: #865DFF; }
+        footer .divFooter .contactanos a:hover {
+          color: #E384FF; }
     footer .divFooter .redes {
       text-align: right;
       list-style-type: none;
@@ -596,6 +692,9 @@ footer {
         border-radius: 8px; }
         footer .divFooter .redes a img {
           padding-right: 5px; }
+      footer .divFooter .redes:hover .shadow-pop-tr {
+        -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+        animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
     footer .divFooter .copyRight {
       text-align: center; }
 
@@ -622,7 +721,7 @@ footer {
       gap: .9375rem;
       height: 900px; }
   .mainTamaño .sectionPrincipal .fondoDeproductos {
-    height: 1350px; } }
+    height: 1450px; } }
 
 @media (max-width: 836px) {
   .sectionNosotros .grid-container {
@@ -635,7 +734,7 @@ footer {
 
 @media (max-width: 768px) {
   .mainTamaño .sectionPrincipal .fondoDeproductos {
-    height: 1500px; }
+    height: 1650px; }
     .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers {
       display: flex;
       gap: 15px;
@@ -688,7 +787,7 @@ footer {
   .mainTamaño .sectionPrincipal {
     height: auto; }
     .mainTamaño .sectionPrincipal .fondoDeproductos {
-      height: 2240px; }
+      height: 2370px; }
       .mainTamaño .sectionPrincipal .fondoDeproductos .cardContainers {
         height: 2240px; }
   .divError {
