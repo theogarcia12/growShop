@@ -7,16 +7,16 @@ footer {
         .contactanos {
             padding-top: 20px;
             text-align: center;
-            color: #865DFF;
+            color: map-get($colores, purpura);
             text-decoration: none;
             justify-content: center;
             a{ 
                 text-align: center;
                 justify-content: center;
                 text-decoration: none;
-                color: #865DFF;
+                color: map-get($colores, purpura);
                 &:hover{
-                    color: #E384FF;
+                    color: map-get($colores, rosa);
                 }
             }
         }
@@ -27,11 +27,11 @@ footer {
             height: 50px;
             a{
                 text-align: center;
-                color: #E384FF;
+                color: map-get($colores, rosa);
                 margin-right: 20px;
                 padding: 9px;
                 text-decoration: none;
-                border: 1px solid #E384FF;
+                border: 1px solid map-get($colores, rosa);
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 15px;

@@ -1,18 +1,18 @@
 .headerPrincipal {
-    background-color: #191825; 
+    background-color: map-get($colores, oscuro); 
     .navbar {
         div{
             button{
-                background-color: #191825;
+                background-color: map-get($colores, oscuro);
                 span{
-                    background-color: #E384FF;
+                    background-color: map-get($colores, rosa);
                 }
             }
             div {
                 .mainHuno{
                     text-align: center;
                     font-size: 30px;
-                    color: #E384FF;
+                    color: map-get($colores, rosa);
                     font-family:'Merriweather', serif;
                     text-decoration: none;
                     font-weight:bold;
@@ -23,7 +23,7 @@
                     li{
                         a{
                             text-decoration: none;
-                            color:#E384FF;
+                            color:map-get($colores, rosa);
                             font-size: 20px;
                             padding: 0%;
                             text-align: center;

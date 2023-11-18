@@ -9,40 +9,35 @@
     width: 100%;
     padding-top: 25px;
     .cardCompra{
-        background-color: #191825;
+        background-color: map-get($colores, oscuro);
         margin-top: 30px;
         height: 550px;
         box-shadow: 1px 1px .625rem black;
         margin-bottom: 50px;
         ul{
-            display: flex;
+            @include flex(row,wrap,space-around,center,30px);
             width: 100%;
-            flex-direction: row;
-            align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            justify-content: space-around; 
             list-style: none;
             padding-left: 0px;
             li{
                 h3, h2, p{
                     text-align: center;
-                    color: #E384FF;
+                    color: map-get($colores, rosa);
                 }
                 h3{
                     padding-top: 50px;
                 }
                 .cardProducto{
-                    height: 450px;
+                    height: 300px;
                     border-radius: 1.25rem;
-                    box-shadow: 1px 1px .625rem #E384FF;
-                    background-color: #191825;
+                    box-shadow: 1px 1px .625rem map-get($colores, rosa);
+                    background-color: map-get($colores, oscuro);
                     position: relative;
                     z-index: 1;
                     margin-top: 40px;
                     div{
                         h5, p, a{
-                            color: #E384FF;
+                            color: map-get($colores, rosa);
                         }
                     }
                 }
@@ -58,42 +53,37 @@
                     button{
                         a{
                             text-decoration: none;
-                            color: #E384FF;
+                            color: map-get($colores, rosa);
                         }
                     }
                     .btn-primary {
-                        background-color: #191825;
-                        color: #E384FF;
+                        background-color: map-get($colores, oscuro);
+                        color: map-get($colores, rosa);
                     }
                     .btn{
-                        border-color: #E384FF;
+                        border-color: map-get($colores, rosa);
                     }
                 }
             }
         }
     }
     .cardBasado{
-        background-color: #191825;
+        background-color: map-get($colores, oscuro);
         margin-top: 30px;
         height: 550px;
         box-shadow: 1px 1px .625rem black;
         margin-bottom: 30px;
         h2{
-            color: #E384FF;
+            color: map-get($colores, rosa);
             text-align: center;
             padding-top: 15px;
         }
         .cardRecomendado{
-            display: flex;
+            @include flex(row,wrap,space-around,center,10px);
             width: 100%;
-            flex-direction:row;
             height: 300px;
-            align-items: center;
-            gap: 10px;
             background-repeat: no-repeat;
             background-size: cover;
-            flex-wrap: wrap;
-            justify-content: space-around;
         }
     }
 }

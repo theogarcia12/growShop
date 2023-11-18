@@ -1,5 +1,5 @@
 .form-container {
-    background-color: #E384FF;
+    background-color: map-get($colores, rosa);
     padding: 20px;
     box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
     height: 250px;
@@ -12,82 +12,81 @@
             label{
                 font-weight: bold;
                 margin-bottom: 8px;
-                color: #191825;
+                color: map-get($colores, oscuro);
             }
             input{
                 padding: 10px;
-                border: 1px solid #191825;
+                border: 1px solid map-get($colores, oscuro);
                 border-radius: 4px;
             }
             button {
                 padding: 10px;
-                background-color: #191825;
+                background-color: map-get($colores, oscuro);
                 color: #FFF;
                 border: none;
                 border-radius: 4px;
                 text-align: center;
                 cursor: pointer;
                 &:hover{
-                    background-color: #865DFF;
+                    background-color: map-get($colores, purpura);
                 }
             }
         }
     }
 }
 .preguntasFrecu{
-    background-color: #865DFF;
+    background-color: map-get($colores, purpura);
     padding-bottom: 10px;
     box-shadow: 1px 1px .625rem black;
     h2{
-        color: #191825;
+        color: map-get($colores, oscuro);
         text-align: center;
         align-items: center;
         justify-content: center;
         font-size: 26px;
         padding-top: 10px;
-        background-color: #865DFF;
+        background-color: map-get($colores, purpura);
     }
-    div{
-        color: #191825  ;
-        background-color: #E384FF;
-        div{
-            color: #191825  ;
-            background-color: #E384FF;
+    .divPreguntas{
+        color: map-get($colores, oscuro);
+        background-color: map-get($colores, rosa);
+        div{   
+            @extend .divPreguntas;
             border: none;
             h2{
                 .accordion-button{
                     border-color: none;
                 }
                 .accordion-button:not(.collapsed){
-                    color: #E384FF;
-                    background-color: #191825;
-                    border-color: #191825;
+                    color: map-get($colores, rosa);
+                    background-color: map-get($colores, oscuro);
+                    border-color: map-get($colores, oscuro);
                     z-index: 0;
                 }
                 .accordion-button:focus{
-                    border-color: #191825;
-                    color: #E384FF;
+                    border-color: map-get($colores, oscuro);
+                    color: map-get($colores, rosa);
                     box-shadow: none;
                 }
                 .accordion-button:not(.collapsed)::after {
-                    color: #E384FF;
+                    color: map-get($colores, rosa);
                 }
                 button{
-                    background-color: #191825;
-                    color: #E384FF;
-                    border: 1px solid #191825;
+                    background-color: map-get($colores, oscuro);
+                    color: map-get($colores, rosa);
+                    border: 1px solid map-get($colores, oscuro);
                 }
             }
             div{
                 .accordion-body{
-                    border: .0625rem solid #191825;
+                    border: .0625rem solid map-get($colores, oscuro);
                 }
             }
         }
     }
 }
 .espacioBlanco{
-    background-color: #865DFF ;
+    background-color: map-get($colores, purpura);
     width: 100%;
     height: 50px;
     background-position: 40% 30%;
@@ -107,16 +106,16 @@
 
 .sectionContacto{
     text-align: center;
-    color: #E384FF;
+    color: map-get($colores, rosa);
     height: 500px;
     width: 100%;
     padding-top: 20px;
     justify-content: center;
     align-items: center;
     div{
-        color: #191825;
+        color: map-get($colores, oscuro);
         input, span{
-            color:#191825;
+            color:map-get($colores, oscuro);
         }
     }
     .formContacto {
@@ -126,10 +125,10 @@
         height: 200px;
         padding-top: 30px;
         label{
-            color: #191825;
+            color: map-get($colores, oscuro);
         }
         input{
-            color: #191825;
+            color: map-get($colores, oscuro);
         }
         .emailInput{
             align-items: center;

@@ -1,29 +1,55 @@
-.mainTamaño {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "image1 image2"
-            "image3 image4";
-        grid-gap: 20px;
-        margin: 0px;
-        overflow: hidden;
-        .image{
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.mainTamaño{
+    .divGaleria{
+        padding-top: 50px;
+        height: 1400px;
+        background-color: map-get($colores , purpura);
+        h2{
             text-align: center;
+            font-size: $tamaño-titulo;
+            background-color: map-get($colores , purpura);
+        }
+        .gallery {
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: map-get($colores , purpura);
+            margin-bottom: 70px;
+            .image {
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                }
+            }
+        }
+        .carousel{
+            box-shadow: 1px 1px .625rem black;
+            margin-top: 40px;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            div{
+                div{
+                    div{
+                        align-items: center;
+                        justify-content: center;
+                        padding-bottom: 250px;
+                    }
+                }
+            }
         }
     }
-}
-.image1 {
-    grid-area: image1;
-    
-}
-.image2 {
-    grid-area: image2;
-}
-.image3 {
-    grid-area: image3;
-}
-.image4 {
-    grid-area: image4;
 }

@@ -1,10 +1,11 @@
 .bodyClass {
     font-family: 'Merriweather', serif;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #E384FF;
+    background-color: map-get($colores, rosa);
     font-weight: bold;
 }
 h1 {
@@ -16,7 +17,7 @@ h1 {
     border-radius: 1.25rem;
     overflow: hidden;
     box-shadow: 1px 1px .625rem black;
-    background-color: #191825;
+    background-color: map-get($colores, oscuro);
     position: relative;
     z-index: 1;
     div{
@@ -30,11 +31,12 @@ h1 {
     }
     h2{
         text-align: center;
-        color: #865DFF;
+        color: map-get($colores, purpura);
     }
     p{
+        color: map-get($colores, rosa);
+        margin-bottom: 0px;
         text-align: center;
-        color: #865DFF;
     }
 }
 

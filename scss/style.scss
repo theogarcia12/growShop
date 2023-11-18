@@ -1,9 +1,11 @@
 /** variable mixins mapas = utilities **/
 @import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/function";
 
 /** es la carpeta base **/
 @import "./base/_reset.scss";
-@import "./layout/_navbar.scss";
 @import "./layout/_header.scss";
 @import "./layout/_main-index.scss";
 @import "./layout/_main-producto.scss";

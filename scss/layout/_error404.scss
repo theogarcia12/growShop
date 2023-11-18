@@ -4,7 +4,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;
-        background-color: #191825;
+        background-color: map-get($colores, oscuro);
         margin-top: 100px;
         box-shadow: 1px 1px .625rem black;
         ul {
@@ -20,22 +20,22 @@
             li{
                 h1{
                     font-size: 30px;
-                    color: #E384FF;
+                    color: map-get($colores, rosa);
                 }
                 p{
                     font-size: 20px;
-                    color: #E384FF;
+                    color: map-get($colores, rosa);
                 }
                 img{
-                    background-color: #191825;
+                    background-color: map-get($colores, oscuro);
                     justify-content: center;
                     align-items: center ;
                     width: 100%;
                     box-shadow: 1px 1px .625rem black;
                 }
                 button{
-                    background-color: #E384FF;
-                    border-color: #E384FF;
+                    background-color: map-get($colores, rosa);
+                    border-color: map-get($colores, rosa);
                     box-shadow: 1px 1px .625rem black;
                     a{
                         text-decoration: none;

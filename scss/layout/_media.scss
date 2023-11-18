@@ -10,6 +10,14 @@
             }
         }
     }
+    .mainTamaño{
+        .divGaleria{
+            .carousel{
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+        }
+    }
 }
 @media (max-width: 1089px){
     .divComprar{
@@ -56,6 +64,15 @@
             font-size: 20px;
         }
     }
+    .mainTamaño{
+        .divGaleria{
+            .carousel{
+                margin-left: 0px;
+                margin-right: 0px;
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 @media(max-width:768px){
@@ -71,19 +88,9 @@
             }
         }
     }
-    .mainTamaño{
-        .grid-container {
-            grid-template-columns: 1fr; 
-            grid-template-areas:
-            "image1"
-            "image2"
-            "image3"
-            "image4";
-            .image {
-                .image1, .image2, .image3, .image4 {
-                    margin-bottom: 20px; 
-                }
-            }
+    .mainTamaño {
+        .divGaleria{
+            height: 1900px;
         }
     }
 }
@@ -154,6 +161,11 @@
             font-size: 13px
         }
     }
+    .mainTamaño {
+        .divGaleria{
+            height: 1700px;
+        }
+    }
 }
 
 @media(max-width:520px) {
@@ -207,7 +219,24 @@
             }
         }
     }
+    .mainTamaño {
+        .divGaleria{
+            height: 3800px;
+        }
+    }
+    .formulario{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
+@media(max-width:480px){
+    .mainTamaño {
+        .divGaleria{
+            height: 3400px;
+        }
+    }
+}
+
 @media(max-width:390px){
     .espacioBlanco{
         .classOferta{
@@ -271,14 +300,6 @@
         .cardCompra{
             height: 850px;
             ul{
-                .tituloP{
-                    
-                }
-                .cardLi{
-                    .cardProducto{
-                        
-                    }                    
-                }
                 .botonesProduct{
                     padding-bottom: 30px;
                 }
@@ -287,5 +308,23 @@
     }
     .form-container{
         height: 310px;
+    }
+    .mainTamaño {
+        .divGaleria{
+            height: 2900px;
+            h2{
+                font-size: 27px;
+            }
+        }
+    }
+    .classCarrito{
+        height: 240px;
+    }
+}
+@media(max-width:340px){
+    .mainTamaño {
+        .divGaleria{
+            height: 2700px;
+        }
     }
 }

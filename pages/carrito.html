@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrowShop</title>
+    <meta name="robots" content="index, archive">
+    <title>CARRITO - GrowShop</title>
     <link rel="shortcut icon" href="../assets/images/laposta.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -14,7 +18,7 @@
         <nav class="navbar navbar-expand-md bg-custom">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="image-fluid" src="../assets/images/laposta.png" alt="" width="120" height="120">
+                    <img class="image-fluid" src="../assets/images/laposta.png" alt="foto de nuestro negocio growshop" width="120" height="120">
                 </a>
                 <div class="d-flex justify-content-center align-items-center flex-column">
                     <a class="mainHuno ml-4" href="../index.html">
@@ -30,7 +34,7 @@
                             <a class="nav-link" href="./galeria.html">GALERIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="../assets/images/carrito-de-compras (1).png" alt=""></a>
+                            <a class="nav-link" href="#"><img src="../assets/images/carrito-de-compras (1).png" alt="imagen del carrito, que es un boton para llegar al carrito"></a>
                         </li>
                     </ul>
                 </div>
@@ -42,10 +46,62 @@
             <h1 class="classOferta">TU CARRITO:</h1>
             <p class="carritoP">[VACIO]</p>
         </div>
+        <form class="formulario row g-3">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="validationDefault01" value="Pepito" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" value="Messi" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Email</label>
+                <input type="text" class="form-control" id="validationDefault02" value="email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Pais</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">selecciona...</option>
+                    <option>Argentina</option>
+                    <option>Mexico</option>
+                    <option>Uruguay</option>
+                    <option>Paraguay</option>
+                    <option>Venezuela</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-md-8">
+                <label for="validationDefault01" class="form-label">Numero de tarjeta</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div> 
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                    Terminos y condiciones
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Realizar pedido</button>
+            </div>
+        </form>
         <section class="classCarrito">
             <h1>METODOS DE PAGO</h1>
             <div>
-                <img src="https://static.wixstatic.com/media/00d69d_3abea833f76f4b2d9956b1593661c943~mv2.png/v1/fill/w_560,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/formas-pago-2.png" alt="">
+                <img class="img-fluid" src="https://static.wixstatic.com/media/00d69d_3abea833f76f4b2d9956b1593661c943~mv2.png/v1/fill/w_560,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/formas-pago-2.png" alt="metodos de pago">
             </div>
         </section>
     </main>
@@ -54,8 +110,8 @@
             <h2 class="contactanos">TUVISTE ALGUN PROBLEMA CON NUESTROS PRODUCTOS?</h2>
             <h3 class="contactanos">contactanos <a href="./contactanos.html">aquí.</a></h3>
             <ul>
-                <li class="redes"><a href="https://www.instagram.com/vivero.plantoluegoexisto/" target="_blank"><img src="../assets/images/instagram (2).png" alt="">instagram</a></li>
-                <li class="redes"><a href="./error404.html"><img src="../assets/images/whatsapp (2).png" alt="">whatsapp</a></li>
+                <li class="redes"><a class="shadow-pop-tr" href="https://www.instagram.com/vivero.plantoluegoexisto/" target="_blank"><img src="../assets/images/instagram (2).png" alt="icono de instagram, tambien boton que te lleva a instagram">instagram</a></li>
+                <li class="redes"><a class="shadow-pop-tr" href="./error404.html"><img src="../assets/images/whatsapp (2).png" alt="icono de whatsapp, tambien boton que te lleva a whatsapp">whatsapp</a></li>
             </ul>
             <p class="copyRight">Copyright@2023 todos los derechos reservados.</p>
         </div>
